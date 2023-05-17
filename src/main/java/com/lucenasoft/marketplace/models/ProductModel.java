@@ -3,6 +3,8 @@ package com.lucenasoft.marketplace.models;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.UUID;
+
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
@@ -11,7 +13,7 @@ import lombok.*;
 @Entity(name = "hardwares")
 public class ProductModel {
     @Id @GeneratedValue(strategy = GenerationType.UUID)
-    private Long id;
+    private UUID id;
     private String title;
     private String imgURL;
     private Double price;
