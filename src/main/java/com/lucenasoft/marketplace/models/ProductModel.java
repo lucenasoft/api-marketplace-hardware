@@ -10,7 +10,7 @@ import lombok.*;
 @Table(name = "hardwares")
 @Entity(name = "hardwares")
 public class ProductModel {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.UUID)
     private Long id;
     private String title;
     private String imgURL;
