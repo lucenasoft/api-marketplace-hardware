@@ -14,7 +14,7 @@ public class ProductModel {
     private Long id;
     private String title;
     private String imgURL;
-    private Integer price;
+    private Double price;
 
     public ProductModel(ProductRequestDTO body) {
         this.title = body.title();
